@@ -1,15 +1,15 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux'; // Import useSelector
+import { useDispatch, useSelector } from 'react-redux'; 
 import { signInStart, signInFailure, signInSuccess } from '../redux/user/UserSlice';
 import OAuth from '../components/OAuth';
 
 function SignIn() {
   const [formData, setFormData] = useState({});
-  const { loading, error } = useSelector((state) => state.user); // Use useSelector to access user state
+  const { loading, error } = useSelector((state) => state.user); 
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const [localError, setLocalError] = useState(null); // Define an error state locally
+  const [localError, setLocalError] = useState(null); 
 
   const handleChange = (e) => {
     setFormData({

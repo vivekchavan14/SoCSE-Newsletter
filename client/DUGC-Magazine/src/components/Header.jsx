@@ -10,7 +10,7 @@ function Header() {
            
     <div className='text-red-600'>
     <Link to="/">
-       <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'> <span className='text-slate-500'>DUGC-</span> <span className='text-slate-700'>Magazine</span> </h1>
+       <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'> <span className='text-slate-500'>SoCSE-</span> <span className='text-slate-700'>Newsletter</span> </h1>
     </Link>
     </div>
     <form className='bg-slate-100 p-3 rounded-lg flex item-center'>
