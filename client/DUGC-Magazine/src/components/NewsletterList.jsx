@@ -56,3 +56,4 @@ const NewsletterList = () => {
 };
 
 export default NewsletterList;
+

@@ -5,7 +5,8 @@ import dotenv from 'dotenv';
 import { errorHandler } from "../utils/error.js";
 dotenv.config();
 
-const JWT_SECRET = "jwt-secret";
+const JWT_SECRET = process.env.JWT_SECRET || "fallback_secret_if_not_set_in_env";
+
 
 export const signup = async (req,res,next) => {
     const {username, email, password} = req.body;

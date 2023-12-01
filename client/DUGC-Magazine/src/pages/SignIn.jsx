@@ -20,7 +20,7 @@ function SignIn() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLocalError(null); // Clear local error
+    setLocalError(null); 
 
     try {
       dispatch(signInStart());
@@ -36,7 +36,7 @@ function SignIn() {
 
       if (data.success === false) {
         dispatch(signInFailure(data.message));
-        setLocalError(data.message); // Set the local error
+        setLocalError(data.message); 
       } else {
         dispatch(signInSuccess(data));
         navigate('/home');
@@ -45,7 +45,7 @@ function SignIn() {
     } catch (err) {
       setLocalError('An error occurred while processing your request.');
     } finally {
-      dispatch(signInFailure(localError)); // Set loading to false after the request is completed.
+      dispatch(signInFailure(localError)); 
     }
   }
 
